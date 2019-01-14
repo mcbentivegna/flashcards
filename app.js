@@ -14,7 +14,7 @@
 	//this tells express which template engine to use.
 
 //hosting info
-	const port = 3000
+	const port = 8000
 	const hostname = '127.0.0.1'
 
 //templates
