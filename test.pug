@@ -1,0 +1,37 @@
+html(lang="en")
+	head
+	body
+	div.wrapper
+		p Hello, #{name}!
+		p Hello, #{name2}!
+		a(href = 'michellebentivegna.com') michellebentivegna.com
+
+		//- We can declare a variable that we use in the attribute list. In Javascript
+		//- This is called unbuffered code, since it doesn't contribute to the output.
+		//- If I didn't have this dash in front of the comment, to indicate buffered code, it would appear in the html
+		// This comment will appear in html
+		- var className = 'my-class-name'
+
+		//-You can use normal HTML
+		<p class = 'hello'> Hello, Gloria!</p>
+
+		//- Give HTML multiple attributes
+		p(
+			class = className
+			style={color: 'red'}
+		) Hello Ruby!
+
+		//- class and id attributes can be like this (.button)
+		a.my-class(href = 'nytimes.com') Hello NYT!
+		p
+			a#washington-post(href = 'washingtonpost.com') Hello Washington Post!
+
+		//- Cool, this is how to do a loop
+		- for (var x=0; x<3; x++)
+			li item
+
+		//-nesting
+		ul
+			li Washington Post
+			li New York Times
+			li Boston Globe

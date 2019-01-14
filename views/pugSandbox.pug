@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+	head
+	body
+		div
+			table(style='width:20%', border='1')
+				each name in names
+					tr
+						td=name.first
+						td=name.last
+			ul
+				each color in colors
+					li(style={color: color})=color
