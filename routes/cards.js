@@ -30,7 +30,7 @@ router.get('/cards/:id', (req, res)=>{
 	let hint;
 	let nextSide = 'question'
 	if(side == 'question'){
-		hint = cards[id]
+		hint = cards[id].hint
 		nextSide = 'answer'
 	}
 
